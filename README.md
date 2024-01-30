@@ -1,7 +1,7 @@
 # 🚀Docker Cheat Sheet/CLI Commands🚀
 
 ## Basic commands
-***
+
 `docker run "image"`
 
 ### Process Status 
@@ -29,7 +29,7 @@ For remove an image we have to stop and remove all dependent containers first.
 ---
 
 ## Managing Docker Services and Sockets with Systemd
-***
+
 Docker service can still be activated through the Docker socket (`docker.socket`) even if you stop the Docker service (`docker.service`). The Docker socket allows communication with the Docker daemon and is used for Docker API access.
 
 1. This command checks the status of the Docker service.
@@ -45,11 +45,11 @@ Docker service can still be activated through the Docker socket (`docker.socket`
 ---
 
 ## Docker Container Lifecycle
-***
+
 The lifecycle of a Docker container involves creation, running, stopping, and removal. Containers are created from Docker images, run as isolated instances, can be stopped or paused, and can be removed when no longer needed.
 
-![Container_life.png](../_resources/Container_life.png)
-
+![Container_life.png](../_resources/Container_life-1.png)
+<img src="_resources/Container_life.png" alt="Lifecycle of Docker Container" width="800"/>
 1. docker create:
 Purpose: Creates a new container but does not start it.
 Example:
